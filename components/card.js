@@ -46,7 +46,7 @@ diarytemplate.innerHTML = ` <style>
   
   .flip-card-front h4 {
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0;
     margin: 1vh;
     color: white;

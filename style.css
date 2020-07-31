@@ -13,9 +13,21 @@ body {
   min-height: 100vh;
 }
 
+.app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  bottom:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .swiper-container {
   width: 100%;
   text-align: center;
+  margin-bottom: 5vh;
 }
 
 .swiper-container h3 {
@@ -33,20 +45,6 @@ body {
 }
 
 
-.flip-container {
-  position: absolute;
-  top:0;
-  right:0;
-  width:100%;
-  height:100%;
-}
-
-.flip-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
 
 header {
   position: absolute;
@@ -126,7 +124,7 @@ a:hover {
 }
 
 .swiper-pagination-bullet-active {
-  background: #5d6d7c;
+  background: white;
 }
 
 /*modal*/
