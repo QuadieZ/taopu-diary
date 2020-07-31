@@ -183,10 +183,6 @@ a:hover {
 }
 
 @media (orientation: landscape) {
-  .swiper-container {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
 
   footer img {
     width: 15vw;
@@ -239,10 +235,6 @@ a:hover {
 }
 
 @media (orientation: portrait) {
-  .swiper-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
 
   footer img {
     width: 30vw;
@@ -304,8 +296,5 @@ a:hover {
 }
 
 @media (orientation: landscape) and (min-height: 480px) {
-  .swiper-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+
 }
