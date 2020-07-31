@@ -19,10 +19,15 @@ body {
   height: 100%;
   top:0;
   bottom:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .swiper-container {
   width: 100%;
   text-align: center;
+  margin-bottom: 5vh;
 }
 
 .swiper-container h3 {
