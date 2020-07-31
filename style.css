@@ -240,8 +240,8 @@ a:hover {
 
 @media (orientation: portrait) {
   .swiper-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top:5vh;
+    padding-bottom: 10vh;
   }
 
   footer img {
@@ -305,7 +305,7 @@ a:hover {
 
 @media (orientation: landscape) and (min-height: 480px) {
   .swiper-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
   }
 }
