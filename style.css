@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: "Itim", cursive;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.swiper-container {
+  width: 100%;
+  text-align: center;
+}
+
+.swiper-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 4vh;
+  color:#5d6d7c ;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 40vh;
+  height: 40vh;
+  background: transparent;
+}
+
+
+.flip-container {
+  position: absolute;
+  top:0;
+  right:0;
+  width:100%;
+  height:100%;
+}
+
+.flip-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content {
+  margin: 2vh;
+  cursor: default;
+}
+
+.flexy {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-link {
+  margin-left: 3vh;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  color: #5d6d7c;
+}
+
+footer {
+  position: absolute;
+  background: url("./assets/footer.png");
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+}
+
+
+footer img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  margin: 2vh;
+}
+
+.links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 2vh;
+  display: flex;
+  z-index:100;
+}
+
+.footer-title {
+  color: #5d6d7c;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #5d6d7c;
+}
+
+.swiper-pagination-bullet-active {
+  background: #5d6d7c;
+}
+
+/*modal*/
+#modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#taopumodal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+
+.modal-content {
+  background: white;
+  border-radius: 50px;
+  border: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#aboutModal {
+  background: url("./assets/seca.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#carerModal {
+  background: #f2efe2;
+}
+
+.modal-text p {
+  color:#353b41;
+  
+}
+
+.easter {
+  cursor: pointer;
+}
+
+@media (orientation: landscape) {
+  .swiper-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  footer img {
+    width: 15vw;
+  }
+
+  .footer-title,
+  .header-content {
+    font-size: 3vh;
+  }
+
+  .links {
+    font-size: 2.6vh;
+  }
+
+  .link-content {
+    margin-left: 3vh;
+  }
+
+  .modal-content {
+    width: 50vw;
+    height: 40vh;
+    padding: 5vh;
+    font-size: 3vh;
+    line-height: 6vh;
+    justify-content: space-around;
+  }
+
+  .modal-content img {
+    height: 80%;
+    margin-right: 5vh;
+  }
+  .modal-text {
+    overflow: scroll;
+    height: 100%;
+  }
+  #carerModal h5 {
+    margin-top: 3vh;
+  }
+
+  #carerModal h3 {
+    margin: 0;
+    margin-top: -2vh;
+    margin-bottom: 3vh;
+  }
+
+  .egg-svg {
+    width:20%;
+    height:100%;
+  }
+}
+
+@media (orientation: portrait) {
+  .swiper-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  footer img {
+    width: 30vw;
+  }
+
+  .footer-title,
+  .header-content {
+    font-size: 3vw;
+  }
+
+  .links {
+    flex-direction: column;
+    font-size: 2.6vw;
+  }
+
+  .footer-title {
+    color: #5d6d7c;
+  }
+
+  .first {
+    margin-bottom: 2vh;
+  }
+
+  .modal-content {
+    width: 70vw;
+    height: 40vh;
+    padding: 5vh;
+    font-size: 4vw;
+    line-height: 6vw;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .modal-content img {
+    height: 50%;
+    margin-bottom: 5vw;
+  }
+
+  .modal-text {
+    overflow: scroll;
+    height: 100%;
+  }
+  #carerModal h5 {
+    margin-top: 3vw;
+  }
+
+  #carerModal h3 {
+    margin: 0;
+    margin-top: -2vw;
+    margin-bottom: 3vw;
+  }
+
+  .egg-svg {
+    width:50%;
+    height:100%;
+  }
+
+  
+}
+
+@media (orientation: landscape) and (min-height: 480px) {
+  .swiper-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

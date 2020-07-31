@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tao Pu</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        ไดอารี่ของต้าวปุ
+      </div>
+      <div class="flexy header-content">
+        <div class="header-link" id="about">เกี่ยวกับต้าวปุ</div>
+        <div class="header-link" id="me">ผู้เลี้ยง</div>
+      </div>
+    </header>
+
+    <script src="./components/card.js"></script>
+
+    <div class="swiper-container">
+      <h3>กดค้างที่รูปเพื่ออ่านเพิ่มเติม</h3>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <diary-card topic="hi" date="01.08.20">
+            <div slot="content">HI</div>
+          </diary-card>
+        </div>
+
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <footer>
+      <img
+        src="./assets/icon.png"
+        alt="egg icon"
+        onclick="taopu()"
+        class="easter"
+      />
+      <div class="links">
+        <div class="first link-content">
+          <ul>
+            <li class="footer-title">ข้อมูลต่างๆ</li>
+            <li>
+              <a href="https://github.com/QuadieZ/TaoPusDiary" target="_blank"
+                >Source Code</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/QuadieZ" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/phpich.10/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="link-content">
+          <ul>
+            <li class="footer-title">งานอื่นๆ</li>
+            <li>
+              <a
+                href="https://www.instagram.com/parkkinkaow.official/"
+                target="_blank"
+                >ParkKinKaow.Official</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCg3vf1wf52gB7SarpCXgd5Q"
+                target="_blank"
+                >Nine Lives Audio Book</a
+              >
+            </li>
+            <li>
+              <a href="https://www.facebook.com/16Perna" target="_blank"
+                >16 Perna Facebook Page</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal">
+      <div class="modal-content" id="aboutModal">
+        <img src="./assets/test.png" alt="รูปต้าวปุ" />
+        <div class="modal-text">
+          <h3>เรื่องราวของต้าวปุ</h3>
+          <p>
+            ชื่อ: ต้าวปุ / อั่ยต้าว<br />
+            วันเกิด: 01 สิงหาคม 2020<br />
+            อายุ: 10 วัน<br />
+            อุปนิสัย: ปุ๊กลุ๊กน่ารัก ชอบการท่องเที่ยว<br />
+            ความกลัว: ตกจากที่สูง
+          </p>
+        </div>
+      </div>
+      <div class="modal-content" id="carerModal">
+        <img src="./assets/me.png" alt="รูปพิชญาภา" />
+        <div class="modal-text">
+          <h5>จัดทำโดย</h5>
+          <h3>น.ส.พิชญาภา คณาพัฒนวงศ์</h3>
+          <p>
+            ชั้นมัธยมศึกษาปีที่ 6 ห้อง 1 รร.เขมะสิริอนุสสรณ์
+            เพื่อบันทึกการเลี้ยงไข่ รวมถึงฝึกฝนทักษะการออกแบบและสร้างเว็บไซต์
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="taopumodal">
+      <svg
+        class="egg-svg"
+        viewBox="0 0 323 415"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <ellipse
+          cx="161.422"
+          cy="207.477"
+          rx="160.636"
+          ry="207.273"
+          fill="#F2EFE2"
+          class="egg"
+          onclick="move()"
+        />
+        <g clip-path="url(#clip0)" onclick="move()">
+          <path
+            d="M218.269 85.7173C203.429 85.7173 190.047 92.3557 180.58 103C179.717 103.97 178.183 103.97 177.321 103C167.853 92.3561 154.471 85.7173 139.631 85.7173C110.927 85.7173 87.6548 110.55 87.6548 141.186C87.6548 167.959 112.118 213.443 166.298 241.291C169.809 243.096 173.445 244.826 177.206 246.471C178.315 246.956 179.584 246.956 180.693 246.471C184.454 244.826 188.091 243.096 191.601 241.291C245.776 213.443 270.239 167.959 270.239 141.186C270.239 110.55 246.973 85.7173 218.269 85.7173Z"
+            fill="#FDD000"
+          />
+          <path
+            d="M83.6937 141.175C83.6937 167.952 108.156 213.432 162.33 241.282C165.843 243.087 169.479 244.818 173.243 246.463C174.35 246.947 175.617 246.946 176.725 246.462C180.486 244.818 184.124 243.087 187.633 241.282C187.818 241.19 187.998 241.093 188.179 240.996C134.387 213.124 110.092 167.859 110.092 141.175C110.092 115.41 126.547 93.75 148.858 87.5155C144.647 86.3363 140.226 85.7072 135.663 85.7072C106.96 85.7076 83.6937 110.539 83.6937 141.175Z"
+            fill="#E9AF1B"
+          />
+          <path
+            d="M151.528 154.529C148.406 154.529 145.876 151.998 145.876 148.876V140.585C145.876 137.463 148.406 134.932 151.528 134.932C154.65 134.932 157.181 137.463 157.181 140.585V148.876C157.182 151.998 154.65 154.529 151.528 154.529Z"
+            fill="#9F7300"
+          />
+          <path
+            d="M223.131 154.529C220.009 154.529 217.479 151.998 217.479 148.876V140.585C217.479 137.463 220.009 134.932 223.131 134.932C226.253 134.932 228.784 137.463 228.784 140.585V148.876C228.785 151.998 226.253 154.529 223.131 154.529Z"
+            fill="#9F7300"
+          />
+          <path
+            d="M187.33 183.134C176.662 183.134 167.469 175.534 165.474 165.063C164.889 161.996 166.901 159.036 169.968 158.452C173.038 157.865 175.995 159.879 176.58 162.946C177.561 168.092 182.082 171.827 187.33 171.827C192.578 171.827 197.1 168.092 198.08 162.946C198.665 159.879 201.629 157.868 204.692 158.451C207.759 159.035 209.771 161.996 209.187 165.062C207.192 175.533 197.999 183.134 187.33 183.134Z"
+            fill="#9F7300"
+          />
+        </g>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1.39429 226.175L55.2872 200.213L88.2889 244.702L126.779 176.712L187.281 233.205L213.784 200.217L246.788 223.699L294.776 183.21L321.503 224.266C314.88 330.888 245.723 414.75 161.386 414.75C77.553 414.75 8.71919 331.887 1.39429 226.175Z"
+          fill="#E3A765"
+          onclick="move()"
+          class="egg"
+        />
+        <path
+          id="move"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M321.538 224.268C321.883 218.73 322.058 213.13 322.058 207.477C322.058 93.0038 250.139 0.204681 161.422 0.204681C72.7045 0.204681 0.785156 93.0038 0.785156 207.477C0.785156 213.778 1.00305 220.014 1.42966 226.172L55.3306 200.205L88.3306 244.705L126.831 176.705L187.331 233.205L213.831 200.205L246.831 223.705L294.831 183.205L321.538 224.268Z"
+          fill="#E3A765"
+          onclick="move()"
+          class="egg"
+        />
+        <defs>
+          <clipPath id="clip0">
+            <rect
+              width="217.636"
+              height="217.636"
+              fill="white"
+              transform="translate(52.6033 72.7501)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+          clickable: true,
+        },
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: true,
+        },
+      });
+    </script>
+  </body>
+</html>
