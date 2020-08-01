@@ -60,7 +60,7 @@ const move = () => {
     );
     moved++;
   } else if (moved == 1) {
-    elem.animate([{ transform: "translateY(-30%)", '-webkit-transform': "translateY(-30%)",}], {
+    elem.animate([{ transform: "translateY(-30%)",}], {
       duration: 2000,
       fill: "forwards",
       easing: "ease-out",
@@ -68,7 +68,7 @@ const move = () => {
     elem.style.animationFillMode = "forwards";
     moved++;
   } else {
-    elem.animate([{ transform: "translateY(0)",'-webkit-transform': "translateY(0)",}], {
+    elem.animate([{ transform: "translateY(0)",}], {
       duration: 2000,
       fill: "forwards",
       easing: "ease-out",
