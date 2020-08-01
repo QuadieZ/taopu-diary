@@ -130,6 +130,7 @@ class diaryCard extends HTMLElement {
     );
     this.shadowRoot.querySelector("#front").innerText =
       this.getAttribute("topic") + " | " + this.getAttribute("date");
+   this.shadowRoot.querySelector('img').src = this.getAttribute('link');
   }
 }
 
