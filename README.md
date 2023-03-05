@@ -1,9 +1,3 @@
-# ARGalaxy
-An educational AR web application about space and galaxy. \
-Created as a part of a high school science course (2020)
-
-## Stack
-- HTML, CSS, JS
 # TaoPu's Diary
 Diary of a beloved egg named Tao Pu (ต้าวปุ)
 Created as a part of a high school science course (2020)
